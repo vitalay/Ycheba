@@ -3,4 +3,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const messageMixin = {
+    data() {
+        return {
+            isOpen: false
+        }
+    },
+    methods: {
+        close() {
+            this.isOpen = !this.isOpen
+        }
+    },
+}
+const app = createApp(App)
+app.mixin(messageMixin)
+.mount('#app')

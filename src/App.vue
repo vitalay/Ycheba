@@ -12,16 +12,7 @@ import MessageOne from './components/MessageOne.vue'
 import MessageTwo from './components/MessageTwo.vue'
 export default {
 
-    data() {
-        return {
-            isOpen: false
-        }
-    },
-    methods: {
-        close() {
-            this.isOpen = !this.isOpen
-        }
-    },
+
    components: {
         MessageOne,
         MessageTwo
