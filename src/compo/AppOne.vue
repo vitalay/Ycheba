@@ -4,15 +4,19 @@
      <router-link to="/two">TWO PAGE</router-link> 
  </p>
   <p> 
-    <router-link to="/three">THREE PAGE</router-link>
- </p>
-
+    <button @click="goToThreePage">THREE PAGE</button> 
+</p>
 
 
 </template>
 
 <script>
 export default {
+    methods: {
+        goToThreePage() {
+            this.$router.push('/three')
+        }
+    }
 
 }
 </script>
