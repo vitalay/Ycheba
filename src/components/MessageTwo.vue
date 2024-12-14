@@ -1,7 +1,7 @@
 <template>
    <div>
          <message-one 
-        message="Сообщение из компонента message-Two" :isOpen="isOpen"
+        message="Сообщение из компонента message-тwo" :isOpen="isOpen"
         @close="close">
         </message-one>
 </div>
