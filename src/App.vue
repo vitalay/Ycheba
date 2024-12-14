@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid"> 
     <h1>Привет</h1>
-    <message-one 
+     <message-one 
       message="Сообщение из компонента message-one" 
       :isOpen="isOpen" 
       @close="close">
@@ -18,7 +18,8 @@
     <button class="btn btn-primary" @click="isModal = !isModal">
       {{ isModal ? 'Закрыть' : 'Показать' }} модальное окно
     </button>
-  </div>
+  </div> 
+  <router-view></router-view>
 </template>
 
 <script>
@@ -28,26 +29,26 @@ import messageMixin from './messegeMixin.js';
 import TheTeleport from './components/TheTeleport.vue';
 
 export default {
-  mixins: [messageMixin],
-  components: {
-    MessageOne,
-    MessageTwo,
-    TheTeleport,
-  },
-  data() {
-    return {
-      isModal: false,
-    };
+    mixins: [messageMixin],
+   components: {
+     MessageOne,    
+      MessageTwo,
+     TheTeleport,
+   },
+   data() {
+     return {
+       isModal: false,
+     };
   },
 };
 </script>
 
 <style scoped>
-.container-fluid {
+ .container-fluid {
   padding: 20px;
 }
 
 .btn {
   margin-top: 20px;
-}
+} 
 </style>
