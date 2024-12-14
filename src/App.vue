@@ -10,8 +10,12 @@
 <script>
 import MessageOne from './components/MessageOne.vue'
 import MessageTwo from './components/MessageTwo.vue'
-export default {
+import messageMixin from './messegeMixin.js'
 
+
+export default {
+  
+mixins: [messageMixin],
 
    components: {
         MessageOne,

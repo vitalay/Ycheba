@@ -9,8 +9,11 @@
     
     <script>
     import MessageOne from './MessageOne.vue'
+    import messageMixin from '../messegeMixin.js'
    
     export default {
+      
+      mixins: [messageMixin],
   
       
        components: {
