@@ -1,7 +1,7 @@
 <template>
    <div>
          <message-one 
-        message="Сообщение из компонента message-TWO" :isOpen="isOpen"
+        message="Сообщение из компонента message-Two" :isOpen="isOpen"
         @close="close">
         </message-one>
 </div>
@@ -12,6 +12,14 @@
    
     export default {
   
+/*************  ✨ Codeium Command ⭐  *************/
+        /**
+         * Returns the initial data for the component.
+         * 
+         * @returns {Object} - The initial data for the component.
+         * @property {Boolean} isOpen - Whether the message is open or not.
+         */
+/******  c34e8c6c-83da-403a-a2ea-30196adffa38  *******/
         data() {
             return {
                 isOpen: false
