@@ -1,5 +1,5 @@
 <template>
-  <H2>One</H2>
+  <h2>One</h2>
   <p>  
      <router-link to="/two"><button> TWO PAGE</button></router-link> 
  </p>

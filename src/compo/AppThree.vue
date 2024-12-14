@@ -1,5 +1,5 @@
 <template>
-  <H2>Three</H2>
+  <h2>Three</h2>
 </template>
 
 <script>
