@@ -5,6 +5,7 @@
         @close="close">
         </message-one>
 </div>
+
     </template>
     
     <script>
